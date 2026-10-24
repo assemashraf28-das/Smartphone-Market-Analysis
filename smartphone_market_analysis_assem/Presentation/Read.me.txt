@@ -1,0 +1,30 @@
+# Smartphone Market Analysis Using Python & Power BI
+
+## 📌 Project Overview
+This project focuses on analyzing the Amazon smartphone marketplace dataset. The goal is to transform messy, unstructured e-commerce data into actionable business insights using Python for Data Engineering & Feature Engineering, and Power BI for interactive visualization and dashboard design.
+
+## 🛠️ Tools & Technologies Used
+- **Python**: Data Cleaning, Missing Value Handling, Regex Text Extraction, Feature Engineering.
+- **Power BI**: Data Modeling, Interactive Dashboard Building, Slicers, KPI Cards, Drill-down Visuals.
+
+## 🔄 Project Steps & Workflow
+1. **Data Exploration**: Analyzed 340 raw records containing duplicates, missing values, incorrect data types, and non-smartphone categories.
+2. **Data Cleaning (Python)**:
+   - Removed duplicates based on `ASIN` (340 → 315).
+   - Filtered out non-smartphones (Landlines, Cordless) leaving 237 clean smartphone records.
+   - Converted string-based price formats (`$199.99`) into numeric floats.
+3. **Feature Engineering (Python)**:
+   - Extracted `Brand` from product titles using keyword mapping.
+   - Extracted `Storage_GB` using Regular Expressions (`Regex`).
+   - Transformed text-based sales volume (`4K+ bought`) into clean numbers (`4000`).
+4. **Power BI Dashboard**:
+   - Page 1: High-level Overview (KPIs, Brand Distribution, Average Price & Ratings).
+   - Page 2: Detailed Analysis (Price vs. Rating Scatter Plot, Storage Distribution, Product Detail Table).
+
+## 💡 Key Business Recommendations
+- Focus inventory on highly-rated products with stable sales velocity.
+- Monitor mid-range storage options (`128GB` and `256GB`) as they drive the highest volume.
+- Leverage price-to-rating relationships to optimize competitive product positioning.
+
+---
+**Prepared By**: Assem
